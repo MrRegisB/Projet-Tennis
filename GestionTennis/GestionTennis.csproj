@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E66756BE-86A8-434E-8C3C-51D099A4E5C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestionTennis</RootNamespace>
+    <AssemblyName>GestionTennis</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GestionReservation\Form_gestionReservation_modif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation_modif.Designer.cs">
+      <DependentUpon>Form_gestionReservation_modif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCourt\Form_gestionCourt_modif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCourt\Form_gestionCourt_modif.Designer.cs">
+      <DependentUpon>Form_gestionCourt_modif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionAdherent\Form_gestionAdherent_modif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionAdherent\Form_gestionAdherent_modif.Designer.cs">
+      <DependentUpon>Form_gestionAdherent_modif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation_informations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation_informations.Designer.cs">
+      <DependentUpon>Form_gestionReservation_informations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation_achat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation_achat.Designer.cs">
+      <DependentUpon>Form_gestionReservation_achat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCourt\Form_gestionCourt_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCourt\Form_gestionCourt_add.Designer.cs">
+      <DependentUpon>Form_gestionCourt_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionAdherent\Form_gestionAdherent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionAdherent\Form_gestionAdherent.Designer.cs">
+      <DependentUpon>Form_gestionAdherent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionAdherent\Form_gestionAdherent_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionAdherent\Form_gestionAdherent_Add.Designer.cs">
+      <DependentUpon>Form_gestionAdherent_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionAdherent\Form_gestionAdherent_Afficher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionAdherent\Form_gestionAdherent_Afficher.Designer.cs">
+      <DependentUpon>Form_gestionAdherent_Afficher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCourt\Form_gestionCourt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCourt\Form_gestionCourt.Designer.cs">
+      <DependentUpon>Form_gestionCourt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCourt\Form_gestionCourt_Afficher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCourt\Form_gestionCourt_Afficher.Designer.cs">
+      <DependentUpon>Form_gestionCourt_Afficher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation.Designer.cs">
+      <DependentUpon>Form_gestionReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_menu.Designer.cs">
+      <DependentUpon>Form_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation_reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionReservation\Form_gestionReservation_reservation.Designer.cs">
+      <DependentUpon>Form_gestionReservation_reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GestionReservation\Form_gestionReservation_modif.resx">
+      <DependentUpon>Form_gestionReservation_modif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCourt\Form_gestionCourt_modif.resx">
+      <DependentUpon>Form_gestionCourt_modif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionAdherent\Form_gestionAdherent_modif.resx">
+      <DependentUpon>Form_gestionAdherent_modif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionReservation\Form_gestionReservation_informations.resx">
+      <DependentUpon>Form_gestionReservation_informations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionReservation\Form_gestionReservation_achat.resx">
+      <DependentUpon>Form_gestionReservation_achat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCourt\Form_gestionCourt_add.resx">
+      <DependentUpon>Form_gestionCourt_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionAdherent\Form_gestionAdherent.resx">
+      <DependentUpon>Form_gestionAdherent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionAdherent\Form_gestionAdherent_Add.resx">
+      <DependentUpon>Form_gestionAdherent_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionAdherent\Form_gestionAdherent_Afficher.resx">
+      <DependentUpon>Form_gestionAdherent_Afficher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCourt\Form_gestionCourt.resx">
+      <DependentUpon>Form_gestionCourt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCourt\Form_gestionCourt_Afficher.resx">
+      <DependentUpon>Form_gestionCourt_Afficher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionReservation\Form_gestionReservation.resx">
+      <DependentUpon>Form_gestionReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_menu.resx">
+      <DependentUpon>Form_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionReservation\Form_gestionReservation_reservation.resx">
+      <DependentUpon>Form_gestionReservation_reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
